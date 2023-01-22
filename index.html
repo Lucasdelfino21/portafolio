@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico">
+    <title>Portafolio</title>
+</head>
+
+<body>
+    <!-- Inicio -->
+    <section id="inicio">
+        <div class="container">
+            <header>
+                <div class="container-header">
+                    <h1>LD</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">Inicio</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">Sobre mi</a></li>
+                            <li><a href="#proyectos" onclick="seleccionar(this)">Proyectos</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">Contacto</a></li>
+                        </ul>
+                    </nav>
+                    <!-- Iconos del menu-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <!-- Iconos redes sociales -->
+                    <div class="redes">
+                        <a href="https://github.com/Lucasdelfino21" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/lucasdelfino2121/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos.</p>
+                <h2>Soy <span>Lucas Delfino</span>, desarrollador web</h2>
+                <p class="descripcion">Soy un estudiante a punto de recibirse como Técnico en análisis y desarrollo de
+                    software. Actualmente estoy buscando empleo para poder mejorar como profesional y poder cumplir mis
+                    metas personales.</p>
+                <a href="#proyectos">Mis proyectos</a>
+            </div>
+        </div>
+    </section>
+    <!-- Sobre mi -->
+    <section id="sobremi">
+        <!-- <div class="container-foto">
+            <img src="imagenes/montiel.png" alt="">
+        </div> -->
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre mi</p>
+            <h2>Hola, soy <span>Lucas Delfino</span></h2>
+            <h3>Desarrollador web</h3>
+            <p>Soy un estudiante a punto de recibirse de la Tecnicatura en análisis y desarrollo de software, cursando
+                desde 2020 en el Sedes Sapientiae y anteriormente habiendo cursado en la escuela técnica orientada a
+                programación, en la cual fui aprendiendo los fundamentos de la programación. Actualmente estoy cursando
+                las últimas materias de la carrera. Mis habilidades son:</p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Php</li>
+                <li>Laravel</li>
+                <li>Vue.js</li>
+                <li>MySQL</li>
+            </ul>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum eius quia, ex, ipsam minima est voluptas
+                accusantium consectetur id dolorem doloribus qui. Accusantium illum ut provident! Animi corporis
+                asperiores veniam!</p> -->
+            <a href="docs/LucasDelfinoCV.pdf" download="CV Lucas Delfino">Descargar CV</a>
+        </div>
+    </section>
+    <!-- Proyectos -->
+    <section id="proyectos">
+        <h3 class="titulo-seccion">Mis proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="imagenes/1.png" alt="">
+                <div class="info">
+                    <h4>Gestión de gimnasio</h4>
+                    <p>Este sistema permite llevar control de los clientes, realizar facturacion y obtener reportes. Fue
+                        hecho utilizando laravel y vue.js.</p>
+                    <!-- <a href="" target="_blank"><i class="fa-brands fa-github"></i></a> -->
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="imagenes/2.png" alt="">
+                <div class="info">
+                    <h4>Portfolio</h4>
+                    <p>Diseño de portfolio minimalista.</p>
+                    <!-- <a href="" target="_blank"><i class="fa-brands fa-github"></i></a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contacto -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactame</h3>
+        <div class="container-form">
+            <form method='POST' action='mail.php'>
+                <div class="fila mitad">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre completo" class="input-mitad">
+                    <input type="text" name="email" id="email" placeholder="Dirección Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" name="tema" id="tema" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje..."
+                        class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>lucasdelfino2121@gmail.com</p>
+        <div class="redes">
+            <a href="https://github.com/Lucasdelfino21" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/lucasdelfino2121/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
