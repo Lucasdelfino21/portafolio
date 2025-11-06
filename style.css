@@ -7,7 +7,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 
 /* Seccion inicio */
@@ -178,7 +178,11 @@ html {
   letter-spacing: 2px;
 }
 
-#sobremi .sobremi h2 span {
+#sobremi .sobremi ul p span {
+  color: #ff5080;
+}
+
+#sobremi .ul p span {
   color: #ff5080;
 }
 
